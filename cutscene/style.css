@@ -1,0 +1,69 @@
+* {
+	image-rendering: pixelated;
+}
+
+html, body {
+	background: black;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+#camera {
+	width: 240px;
+	height: 160px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -80px -120px;
+	background: transparent;
+	overflow: hidden;
+	transform: scale(2);
+}
+
+#bg {
+	width: 1344px;
+	height: 992px;
+	background: url('map.png');
+	position: absolute;
+	left: -584px;
+	top: -132px;
+}
+
+#fade {
+	width: 240px;
+	height: 160px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: white;
+	opacity: 0.0;
+	z-index: 900;
+}
+
+#hp {
+	width: 48px;
+	height: 16px;
+	background: url('hp.png');
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 800;
+}
+
+#textbox {
+	width: 240px;
+	height: 64px;
+	background: url('textbox.png');
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 1000;
+	display: none;
+}
+
+.sprite {
+	position: absolute;
+}
